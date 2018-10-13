@@ -8,6 +8,9 @@
 
 import UIKit
 import CoreData
+import Firebase
+import FacebookLogin
+import FacebookCore
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +20,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        SDKApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
+        FirebaseApp.configure()
+//        Database.database().isPersistenceEnabled = true
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        window?.rootViewController = MainNavigationController()
         return true
     }
 
@@ -88,6 +97,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-
-}
+    
 

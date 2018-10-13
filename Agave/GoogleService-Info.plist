@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>991071156710-4ics913e3a1othb3pha0tt3k0jen65gj.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.991071156710-4ics913e3a1othb3pha0tt3k0jen65gj</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBe4VEIjZmHjBKrnTJsSH_OiZ_YG9zNZ2c</string>
+	<key>GCM_SENDER_ID</key>
+	<string>991071156710</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.JBYoung.Agave</string>
+	<key>PROJECT_ID</key>
+	<string>agave-79f33</string>
+	<key>STORAGE_BUCKET</key>
+	<string>agave-79f33.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:991071156710:ios:cf5ba168d14e9116</string>
+	<key>DATABASE_URL</key>
+	<string>https://agave-79f33.firebaseio.com</string>
+</dict>
+</plist>

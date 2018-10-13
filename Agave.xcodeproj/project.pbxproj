@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D2D5D2085CD371E3F622467 /* Pods_AgaveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56E62BFC61254A8FBE8DC805 /* Pods_AgaveUITests.framework */; };
+		816A23457CED70354D38CF8C /* Pods_AgaveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01EC71EEBA426AC8936C3824 /* Pods_AgaveTests.framework */; };
 		99B87E2321727D7400DA9E51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B87E2221727D7400DA9E51 /* AppDelegate.swift */; };
 		99B87E2521727D7400DA9E51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B87E2421727D7400DA9E51 /* ViewController.swift */; };
 		99B87E2821727D7400DA9E51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99B87E2621727D7400DA9E51 /* Main.storyboard */; };
@@ -15,6 +17,16 @@
 		99B87E3021727D7600DA9E51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99B87E2E21727D7600DA9E51 /* LaunchScreen.storyboard */; };
 		99B87E3B21727D7600DA9E51 /* AgaveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B87E3A21727D7600DA9E51 /* AgaveTests.swift */; };
 		99B87E4621727D7600DA9E51 /* AgaveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B87E4521727D7600DA9E51 /* AgaveUITests.swift */; };
+		99B87E562172806500DA9E51 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 99B87E552172806500DA9E51 /* Podfile */; };
+		99B87E58217285A300DA9E51 /* FindPodcastsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B87E57217285A300DA9E51 /* FindPodcastsViewController.swift */; };
+		99B87E5D2172864400DA9E51 /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B87E5A2172864400DA9E51 /* Podcast.swift */; };
+		99B87E5E2172864400DA9E51 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B87E5B2172864400DA9E51 /* Episode.swift */; };
+		99B87E5F2172864400DA9E51 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B87E5C2172864400DA9E51 /* User.swift */; };
+		99B87E6121728A4100DA9E51 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B87E6021728A4100DA9E51 /* LoginViewController.swift */; };
+		99B87E6421728FDB00DA9E51 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B87E6221728FDB00DA9E51 /* MainNavigationController.swift */; };
+		99B87E6521728FDB00DA9E51 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B87E6321728FDB00DA9E51 /* MainTabBarViewController.swift */; };
+		99B87E672172A61400DA9E51 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99B87E662172A61400DA9E51 /* GoogleService-Info.plist */; };
+		CF9E5AF137A9FE269449A560 /* Pods_Agave.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488B2C213CB481B90A8CAC44 /* Pods_Agave.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +47,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01EC71EEBA426AC8936C3824 /* Pods_AgaveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgaveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		351EAC93BB74612CAFC0FD82 /* Pods-Agave.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Agave.release.xcconfig"; path = "Pods/Target Support Files/Pods-Agave/Pods-Agave.release.xcconfig"; sourceTree = "<group>"; };
+		488B2C213CB481B90A8CAC44 /* Pods_Agave.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Agave.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56E62BFC61254A8FBE8DC805 /* Pods_AgaveUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgaveUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96CE0F5CFF170D6373E4F2D2 /* Pods-AgaveUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgaveUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AgaveUITests/Pods-AgaveUITests.release.xcconfig"; sourceTree = "<group>"; };
 		99B87E1F21727D7300DA9E51 /* Agave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Agave.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99B87E2221727D7400DA9E51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99B87E2421727D7400DA9E51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +66,19 @@
 		99B87E4121727D7600DA9E51 /* AgaveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgaveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99B87E4521727D7600DA9E51 /* AgaveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgaveUITests.swift; sourceTree = "<group>"; };
 		99B87E4721727D7600DA9E51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99B87E552172806500DA9E51 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		99B87E57217285A300DA9E51 /* FindPodcastsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPodcastsViewController.swift; sourceTree = "<group>"; };
+		99B87E5A2172864400DA9E51 /* Podcast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
+		99B87E5B2172864400DA9E51 /* Episode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		99B87E5C2172864400DA9E51 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		99B87E6021728A4100DA9E51 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		99B87E6221728FDB00DA9E51 /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		99B87E6321728FDB00DA9E51 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		99B87E662172A61400DA9E51 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A5FC45B5A184D95B18BFA632 /* Pods-AgaveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgaveTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AgaveTests/Pods-AgaveTests.release.xcconfig"; sourceTree = "<group>"; };
+		ABAEC6F346A37D0A8DA633DC /* Pods-Agave.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Agave.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Agave/Pods-Agave.debug.xcconfig"; sourceTree = "<group>"; };
+		E602FD0F3DE8884F88EA2FB7 /* Pods-AgaveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgaveUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AgaveUITests/Pods-AgaveUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EF4E240B52C7E14F11456E70 /* Pods-AgaveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgaveTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AgaveTests/Pods-AgaveTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF9E5AF137A9FE269449A560 /* Pods_Agave.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				816A23457CED70354D38CF8C /* Pods_AgaveTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +102,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D2D5D2085CD371E3F622467 /* Pods_AgaveUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42C09EDBBB68015B0ABBC952 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				488B2C213CB481B90A8CAC44 /* Pods_Agave.framework */,
+				01EC71EEBA426AC8936C3824 /* Pods_AgaveTests.framework */,
+				56E62BFC61254A8FBE8DC805 /* Pods_AgaveUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		99B87E1621727D7300DA9E51 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +126,9 @@
 				99B87E3921727D7600DA9E51 /* AgaveTests */,
 				99B87E4421727D7600DA9E51 /* AgaveUITests */,
 				99B87E2021727D7300DA9E51 /* Products */,
+				99B87E552172806500DA9E51 /* Podfile */,
+				FBB57A940F0FE8122F4A6021 /* Pods */,
+				42C09EDBBB68015B0ABBC952 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +145,10 @@
 		99B87E2121727D7400DA9E51 /* Agave */ = {
 			isa = PBXGroup;
 			children = (
+				99B87E662172A61400DA9E51 /* GoogleService-Info.plist */,
+				99B87E59217285DF00DA9E51 /* Models */,
+				99B87E5421727DBA00DA9E51 /* Auth */,
+				99B87E5321727DB000DA9E51 /* Controllers */,
 				99B87E2221727D7400DA9E51 /* AppDelegate.swift */,
 				99B87E2421727D7400DA9E51 /* ViewController.swift */,
 				99B87E2621727D7400DA9E51 /* Main.storyboard */,
@@ -128,6 +178,47 @@
 			path = AgaveUITests;
 			sourceTree = "<group>";
 		};
+		99B87E5321727DB000DA9E51 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				99B87E6021728A4100DA9E51 /* LoginViewController.swift */,
+				99B87E57217285A300DA9E51 /* FindPodcastsViewController.swift */,
+				99B87E6221728FDB00DA9E51 /* MainNavigationController.swift */,
+				99B87E6321728FDB00DA9E51 /* MainTabBarViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		99B87E5421727DBA00DA9E51 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		99B87E59217285DF00DA9E51 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				99B87E5B2172864400DA9E51 /* Episode.swift */,
+				99B87E5A2172864400DA9E51 /* Podcast.swift */,
+				99B87E5C2172864400DA9E51 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FBB57A940F0FE8122F4A6021 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ABAEC6F346A37D0A8DA633DC /* Pods-Agave.debug.xcconfig */,
+				351EAC93BB74612CAFC0FD82 /* Pods-Agave.release.xcconfig */,
+				EF4E240B52C7E14F11456E70 /* Pods-AgaveTests.debug.xcconfig */,
+				A5FC45B5A184D95B18BFA632 /* Pods-AgaveTests.release.xcconfig */,
+				E602FD0F3DE8884F88EA2FB7 /* Pods-AgaveUITests.debug.xcconfig */,
+				96CE0F5CFF170D6373E4F2D2 /* Pods-AgaveUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +226,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99B87E4A21727D7600DA9E51 /* Build configuration list for PBXNativeTarget "Agave" */;
 			buildPhases = (
+				DE7EEE949412D508A4D49366 /* [CP] Check Pods Manifest.lock */,
 				99B87E1B21727D7300DA9E51 /* Sources */,
 				99B87E1C21727D7300DA9E51 /* Frameworks */,
 				99B87E1D21727D7300DA9E51 /* Resources */,
+				11E0680A6A3EAAA485C26ABA /* [CP] Embed Pods Frameworks */,
+				9FC3E0009FCB8D5746DFAC41 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,6 +246,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99B87E4D21727D7600DA9E51 /* Build configuration list for PBXNativeTarget "AgaveTests" */;
 			buildPhases = (
+				CA049C13A799E7CF3AFB7C3E /* [CP] Check Pods Manifest.lock */,
 				99B87E3221727D7600DA9E51 /* Sources */,
 				99B87E3321727D7600DA9E51 /* Frameworks */,
 				99B87E3421727D7600DA9E51 /* Resources */,
@@ -170,6 +265,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99B87E5021727D7600DA9E51 /* Build configuration list for PBXNativeTarget "AgaveUITests" */;
 			buildPhases = (
+				BCB1A7C24006CB0F79BC1FE0 /* [CP] Check Pods Manifest.lock */,
 				99B87E3D21727D7600DA9E51 /* Sources */,
 				99B87E3E21727D7600DA9E51 /* Frameworks */,
 				99B87E3F21727D7600DA9E51 /* Resources */,
@@ -234,6 +330,8 @@
 			files = (
 				99B87E3021727D7600DA9E51 /* LaunchScreen.storyboard in Resources */,
 				99B87E2D21727D7600DA9E51 /* Assets.xcassets in Resources */,
+				99B87E672172A61400DA9E51 /* GoogleService-Info.plist in Resources */,
+				99B87E562172806500DA9E51 /* Podfile in Resources */,
 				99B87E2821727D7400DA9E51 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,14 +352,142 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		11E0680A6A3EAAA485C26ABA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Agave/Pods-Agave-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Agave/Pods-Agave-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FC3E0009FCB8D5746DFAC41 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Agave/Pods-Agave-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Agave/Pods-Agave-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCB1A7C24006CB0F79BC1FE0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AgaveUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA049C13A799E7CF3AFB7C3E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AgaveTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE7EEE949412D508A4D49366 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Agave-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		99B87E1B21727D7300DA9E51 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99B87E6421728FDB00DA9E51 /* MainNavigationController.swift in Sources */,
+				99B87E58217285A300DA9E51 /* FindPodcastsViewController.swift in Sources */,
+				99B87E5E2172864400DA9E51 /* Episode.swift in Sources */,
 				99B87E2521727D7400DA9E51 /* ViewController.swift in Sources */,
 				99B87E2B21727D7400DA9E51 /* Agave.xcdatamodeld in Sources */,
+				99B87E6521728FDB00DA9E51 /* MainTabBarViewController.swift in Sources */,
+				99B87E6121728A4100DA9E51 /* LoginViewController.swift in Sources */,
 				99B87E2321727D7400DA9E51 /* AppDelegate.swift in Sources */,
+				99B87E5D2172864400DA9E51 /* Podcast.swift in Sources */,
+				99B87E5F2172864400DA9E51 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +660,7 @@
 		};
 		99B87E4B21727D7600DA9E51 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABAEC6F346A37D0A8DA633DC /* Pods-Agave.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +679,7 @@
 		};
 		99B87E4C21727D7600DA9E51 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 351EAC93BB74612CAFC0FD82 /* Pods-Agave.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -470,6 +698,7 @@
 		};
 		99B87E4E21727D7600DA9E51 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF4E240B52C7E14F11456E70 /* Pods-AgaveTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +720,7 @@
 		};
 		99B87E4F21727D7600DA9E51 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5FC45B5A184D95B18BFA632 /* Pods-AgaveTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +742,7 @@
 		};
 		99B87E5121727D7600DA9E51 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E602FD0F3DE8884F88EA2FB7 /* Pods-AgaveUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +763,7 @@
 		};
 		99B87E5221727D7600DA9E51 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96CE0F5CFF170D6373E4F2D2 /* Pods-AgaveUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
