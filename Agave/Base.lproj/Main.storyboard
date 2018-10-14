@@ -337,14 +337,18 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cU-cw-iNW">
                                                 <rect key="frame" x="0.0" y="0.0" width="173.5" height="30"/>
-                                                <state key="normal" title="Play"/>
+                                                <state key="normal" title="Play">
+                                                    <color key="titleColor" red="0.17254901959999999" green="0.56862745100000001" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="play:" destination="BOO-3v-CAI" eventType="touchUpInside" id="0SX-24-JCc"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cxd-dh-wlr" userLabel="Pause Button">
                                                 <rect key="frame" x="181.5" y="0.0" width="173.5" height="30"/>
-                                                <state key="normal" title="Pause"/>
+                                                <state key="normal" title="Pause">
+                                                    <color key="titleColor" red="0.17254901959999999" green="0.56862745100000001" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="pause:" destination="BOO-3v-CAI" eventType="touchUpInside" id="g90-8d-t6j"/>
                                                 </connections>

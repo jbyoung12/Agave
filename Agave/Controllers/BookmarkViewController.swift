@@ -21,6 +21,8 @@ class BookmarkViewController: UIViewController, UITextViewDelegate {
     var descriptionBlank = true;
 
     override func viewDidLoad() {
+        self.setNeedsStatusBarAppearanceUpdate()
+
         super.viewDidLoad()
         time.text = self.bookmark?.timeString
         descriptioner.delegate = self

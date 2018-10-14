@@ -15,6 +15,8 @@ class MainTabBarViewController: UITabBarController {
         return .lightContent
     }
     override func viewDidLoad() {
+        self.setNeedsStatusBarAppearanceUpdate()
+
         super.viewDidLoad()
         
         let podcastsVC = mainStoryboard.instantiateViewController(withIdentifier: "FindPodcastsViewController")

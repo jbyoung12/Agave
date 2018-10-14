@@ -16,6 +16,7 @@ class MainNavigationController: UINavigationController {
     var identifier: String?
     
     override func viewDidLoad() {
+        self.setNeedsStatusBarAppearanceUpdate()
         super.viewDidLoad()
 
     }

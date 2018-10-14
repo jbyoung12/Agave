@@ -27,6 +27,8 @@ class SoundViewController: UIViewController {
     }
     
     override func viewDidLoad() {
+        self.setNeedsStatusBarAppearanceUpdate()
+
         super.viewDidLoad()
         name.text = self.podcast?.name
         descriptioner.text = self.podcast?.description
@@ -57,14 +59,14 @@ class SoundViewController: UIViewController {
     }
     
     @IBAction func addBookmark(_ sender: Any) {
-        let time = Player.app.audioPlayer?.currentTime
+        let time = Player.app.audioPlayer?.currentTime ?? 0
         // find user ID, Podcast ID, add to bookmarks collection
         // add bookmark of 72 seconds to edwards bookmarks for this american life
         let podcastUsers = db?.collection("podcasts").document((podcast?.documentId)!).collection("users")
         let edwardBookmarks = podcastUsers?.document("VJUKEVptSyfxFrvnCXKg").collection("bookmarks")
         var ref: DocumentReference? = nil
         ref = edwardBookmarks?.addDocument(data: [
-            "time": time!,
+            "time": time,
             "description": ""
         ]) {
             err in
@@ -72,7 +74,7 @@ class SoundViewController: UIViewController {
                 print("Error adding document: \(err)")
             } else {
                 print("Document added with ID: \(ref!.documentID)")
-                self.bookmarks.append(Bookmark(time: time!, description: "", documentId: ref!.documentID))
+                self.bookmarks.append(Bookmark(time: time, description: "", documentId: ref!.documentID))
                 self.bookmarks.sort(by: { (Bookmark1, Bookmark2) -> Bool in
                     return Bookmark1.time < Bookmark2.time
                 })
@@ -84,7 +86,7 @@ class SoundViewController: UIViewController {
     
     fileprivate func getBookmarks(){
         // prints edwards bookmarks
-        bookmarks = []
+        var data = [Bookmark]()
         let podcastUsers = db?.collection("podcasts").document((podcast?.documentId)!).collection("users")
         let edwardBookmarks = podcastUsers?.document("VJUKEVptSyfxFrvnCXKg").collection("bookmarks")
         
@@ -95,13 +97,15 @@ class SoundViewController: UIViewController {
             for document in querySnapshot!.documents {
                 print(document.data())
                 if let bookmark = Bookmark(document: document){
-                    self.bookmarks.append(bookmark)
+                    data.append(bookmark)
                 }
             }
         }
-            self.bookmarks.sort(by: { (Bookmark1, Bookmark2) -> Bool in
+            data.sort(by: { (Bookmark1, Bookmark2) -> Bool in
                 return Bookmark1.time < Bookmark2.time
             })
+            self.bookmarks = data
+
             self.bookmarksTable.reloadData()
     }
     }

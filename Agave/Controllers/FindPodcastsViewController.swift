@@ -21,6 +21,7 @@ class FindPodcastsViewController: UIViewController {
     var podcasts = [Podcast]()
 
     override func viewDidLoad() {
+        self.setNeedsStatusBarAppearanceUpdate()
         super.viewDidLoad()        
         let db = Firestore.firestore()
         self.navigationItem.title = "Podcasts"
