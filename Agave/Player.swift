@@ -66,4 +66,9 @@ class Player {
     func pause(){
         audioPlayer?.pause()
     }
+    
+    
+    func setAudioTime(percent: Float){
+        audioPlayer?.currentTime = (audioPlayer?.duration ?? 0) * Double(percent)
+    }
 }

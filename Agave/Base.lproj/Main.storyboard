@@ -94,7 +94,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UHp-r6-n56">
-                                <rect key="frame" x="0.0" y="288" width="375" height="379"/>
+                                <rect key="frame" x="0.0" y="349.5" width="375" height="317.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -136,7 +136,7 @@
                                 </prototypes>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="HcE-pE-sfk">
-                                <rect key="frame" x="10" y="74" width="355" height="206"/>
+                                <rect key="frame" x="10" y="74" width="355" height="267.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Fu9-SA-N8L">
                                         <rect key="frame" x="0.0" y="0.0" width="355" height="61"/>
@@ -174,8 +174,26 @@
                                             </textView>
                                         </subviews>
                                     </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Mbj-qE-lBp">
+                                        <rect key="frame" x="0.0" y="138" width="355" height="53.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgm-5d-ZEh" userLabel="Time">
+                                                <rect key="frame" x="0.0" y="0.0" width="355" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" continuous="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tg9-Jq-0Jf">
+                                                <rect key="frame" x="-2" y="23.5" width="359" height="31"/>
+                                                <color key="minimumTrackTintColor" red="0.07853760454" green="0.501485246" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <connections>
+                                                    <action selector="sliderChanged:" destination="noN-Ra-bfO" eventType="valueChanged" id="aqk-jd-orl"/>
+                                                </connections>
+                                            </slider>
+                                        </subviews>
+                                    </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ewV-6T-BSB">
-                                        <rect key="frame" x="0.0" y="138" width="355" height="30"/>
+                                        <rect key="frame" x="0.0" y="199.5" width="355" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sut-u4-d3m">
                                                 <rect key="frame" x="0.0" y="0.0" width="173.5" height="30"/>
@@ -198,7 +216,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zQM-gY-GN8">
-                                        <rect key="frame" x="0.0" y="176" width="355" height="30"/>
+                                        <rect key="frame" x="0.0" y="237.5" width="355" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSW-0r-2lz" userLabel="Bookmark">
                                                 <rect key="frame" x="0.0" y="0.0" width="355" height="30"/>
@@ -235,6 +253,7 @@
                         <outlet property="bookmarksTable" destination="UHp-r6-n56" id="hyF-1X-Hm6"/>
                         <outlet property="descriptioner" destination="odB-0X-p6I" id="ZpC-aQ-Ivp"/>
                         <outlet property="name" destination="nbt-GX-cM4" id="go4-WI-fMg"/>
+                        <outlet property="timeSlider" destination="tg9-Jq-0Jf" id="sL1-zc-leu"/>
                         <segue destination="BOO-3v-CAI" kind="show" identifier="showBookmark" id="sam-RE-x5p"/>
                     </connections>
                 </viewController>

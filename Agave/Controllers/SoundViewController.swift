@@ -19,6 +19,7 @@ class SoundViewController: UIViewController {
     @IBOutlet weak var name: UITextView!
     @IBOutlet weak var descriptioner: UITextView!
     @IBOutlet weak var bookmarksTable: UITableView!
+    @IBOutlet weak var timeSlider: UISlider!
     
     override func viewWillAppear(_ animated: Bool) {
         db = Firestore.firestore()
@@ -32,6 +33,7 @@ class SoundViewController: UIViewController {
         bookmarksTable.delegate = self
         bookmarksTable.dataSource = self
         setCustomBack()
+        timeSlider.setValue(0, animated: false)
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -47,6 +49,7 @@ class SoundViewController: UIViewController {
             Player.app.prepareSongAndSession(podcast: podcast!)
         }
         Player.app.play()
+        _ = Timer.scheduledTimer(timeInterval: 1, target: self,   selector: #selector(updateSlider), userInfo: nil, repeats: true)
     }
     
     @IBAction func pause(_ sender: Any) {
@@ -114,6 +117,13 @@ class SoundViewController: UIViewController {
             destination.bookmarksTable = bookmarksTable
         }
     }
+    @IBAction func sliderChanged(_ sender: UISlider) {
+        Player.app.setAudioTime(percent: sender.value);
+    }
+    @objc func updateSlider(){
+        let percent = Double((Player.app.audioPlayer?.currentTime)!) / Double( (Player.app.audioPlayer?.duration)!)
+        timeSlider.setValue(Float(percent), animated: true)
+    }
     
 }
 extension SoundViewController: UITableViewDelegate, UITableViewDataSource {
@@ -143,5 +153,7 @@ extension SoundViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension //return height size whichever you want
     }
+    
+    
 }
 

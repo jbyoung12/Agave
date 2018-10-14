@@ -20,8 +20,11 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSSiriUsageDescription</key>
+	<string>Add bookmarks with voice</string>
 	<key>NSUserActivityTypes</key>
 	<array>
+		<string>AddBookmarkIntent</string>
 		<string>CreateBookmarkIntent</string>
 		<string>INCreateBookmarkIntent</string>
 	</array>

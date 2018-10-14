@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  MainTabBarViewController
 //  Agave
 //
 //  Created by Joshua Young on 10/13/18.
@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Firebase
 
 class MainTabBarViewController: UITabBarController {
     
