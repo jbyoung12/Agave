@@ -8,17 +8,17 @@
 
 import UIKit
 import Firebase
-import FacebookLogin
+//import FacebookLogin
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: Outlets
     
     override func viewDidLoad() {
-        let loginButton = LoginButton(readPermissions: [ .publicProfile ])
-        loginButton.center = view.center
-        
-        view.addSubview(loginButton)
+//        let loginButton = LoginButton(readPermissions: [ .publicProfile ])
+//        loginButton.center = view.center
+//
+//        view.addSubview(loginButton)
 //
 //        if let accessToken = AccessToken.current {
 //            // User is logged in, use 'accessToken' here.

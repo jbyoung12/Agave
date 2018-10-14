@@ -1,28 +1,10 @@
 PODS:
-  - Bolts (1.8.4):
-    - Bolts/AppLinks (= 1.8.4)
-    - Bolts/Tasks (= 1.8.4)
-  - Bolts/AppLinks (1.8.4):
-    - Bolts/Tasks
-  - Bolts/Tasks (1.8.4)
   - BoringSSL (9.0):
     - BoringSSL/Implementation (= 9.0)
     - BoringSSL/Interface (= 9.0)
   - BoringSSL/Implementation (9.0):
     - BoringSSL/Interface (= 9.0)
   - BoringSSL/Interface (9.0)
-  - FacebookCore (0.2.0):
-    - Bolts (~> 1.8)
-    - FBSDKCoreKit (~> 4.15)
-  - FacebookLogin (0.2.0):
-    - Bolts (~> 1.8)
-    - FacebookCore (~> 0.2)
-    - FBSDKCoreKit (~> 4.15)
-    - FBSDKLoginKit (~> 4.15)
-  - FBSDKCoreKit (4.27.0):
-    - Bolts (~> 1.7)
-  - FBSDKLoginKit (4.27.0):
-    - FBSDKCoreKit
   - Firebase/Auth (4.3.0):
     - Firebase/Core
     - FirebaseAuth (= 4.2.1)
@@ -90,20 +72,13 @@ PODS:
   - Protobuf (3.4.0)
 
 DEPENDENCIES:
-  - FacebookCore
-  - FacebookLogin
   - Firebase/Core
   - Firebase/Firestore
   - FirebaseUI/Auth
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - Bolts
     - BoringSSL
-    - FacebookCore
-    - FacebookLogin
-    - FBSDKCoreKit
-    - FBSDKLoginKit
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -122,12 +97,7 @@ SPEC REPOS:
     - Protobuf
 
 SPEC CHECKSUMS:
-  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   BoringSSL: 19083b821ef3ae0f758fae15482e183003b1e265
-  FacebookCore: 2cb3f0fbff218e9d3119cec84bae983b232412de
-  FacebookLogin: c9d606504735780a9e3002465a615512e0a691a5
-  FBSDKCoreKit: ebc6c5f5b3f0e72396041050e2266781a38ac587
-  FBSDKLoginKit: 887be4b7452e1c5a3cc4485ce152529965a0c41e
   Firebase: 83283761a1ef6dc9846e03d08059f51421afbd65
   FirebaseAnalytics: 722b53c7b32bfc7806b06e0093a2f5180d4f2c5a
   FirebaseAuth: d7f047fbeab98062b98ea933b8d934e0fb1190e2
@@ -145,6 +115,6 @@ SPEC CHECKSUMS:
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   Protobuf: 03eef2ee0b674770735cf79d9c4d3659cf6908e8
 
-PODFILE CHECKSUM: b12de777f7558ae0de86c662dd25204427665f0e
+PODFILE CHECKSUM: ec10da4cd2f5c339458113465953dda2366e4f02
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.5.3

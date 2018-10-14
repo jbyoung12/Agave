@@ -9,8 +9,8 @@
 import UIKit
 import CoreData
 import Firebase
-import FacebookLogin
-import FacebookCore
+//import FacebookLogin
+//import FacebookCore
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

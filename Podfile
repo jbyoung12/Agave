@@ -11,8 +11,8 @@ target 'Agave' do
   pod 'FirebaseUI/Auth', :inhibit_warnings => true
   pod 'Firebase/Firestore', :inhibit_warnings => true
   pod 'Firebase/Core', :inhibit_warnings => true
-  pod 'FacebookCore', :inhibit_warnings => true
-  pod 'FacebookLogin', :inhibit_warnings => true
+  # pod 'FacebookCore', :inhibit_warnings => true
+  # pod 'FacebookLogin', :inhibit_warnings => true
   
   target 'AgaveTests' do
     inherit! :search_paths

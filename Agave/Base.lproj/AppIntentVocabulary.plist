@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IntentPhrases</key>
+	<array>
+		<dict>
+			<key>IntentName</key>
+			<string>CreateBookmarkIntent</string>
+			<key>IntentExamples</key>
+			<array>
+				<string>Agave bookmark</string>
+				<string>add a bookmark here Agave</string>
+				<string>add a bookmark here</string>
+				<string>mark this</string>
+				<string>bookmark this</string>
+				<string>bookmark</string>
+				<string>create a bookmark</string>
+				<string>Agave, create a bookmark</string>
+				<string>create a bookmark Agave</string>
+				<string>bookmark this Agave</string>
+				<string>bookmark here</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

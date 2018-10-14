@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5520BC5621732017004C00EC /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5520BC5521732017004C00EC /* IntentHandler.swift */; };
+		5520BC5D21732017004C00EC /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5520BC2E21730922004C00EC /* IntentsUI.framework */; };
+		5520BC6021732017004C00EC /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5520BC5F21732017004C00EC /* IntentViewController.swift */; };
+		5520BC6321732017004C00EC /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5520BC6121732017004C00EC /* MainInterface.storyboard */; };
+		5520BC6721732017004C00EC /* AgaveIntentsUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5520BC5C21732017004C00EC /* AgaveIntentsUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5520BC6A21732017004C00EC /* AgaveIntents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5520BC5321732017004C00EC /* AgaveIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5520BC722173203B004C00EC /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5520BC712173203B004C00EC /* Intents.intentdefinition */; };
+		5520BC752173203B004C00EC /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5520BC712173203B004C00EC /* Intents.intentdefinition */; };
+		5520BC7721732154004C00EC /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5520BC5521732017004C00EC /* IntentHandler.swift */; };
+		5520BC7821732C0F004C00EC /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5520BC712173203B004C00EC /* Intents.intentdefinition */; };
+		5520BC79217331A3004C00EC /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5520BC712173203B004C00EC /* Intents.intentdefinition */; };
+		5520BC7A217331A4004C00EC /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5520BC712173203B004C00EC /* Intents.intentdefinition */; };
 		6D2D5D2085CD371E3F622467 /* Pods_AgaveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56E62BFC61254A8FBE8DC805 /* Pods_AgaveUITests.framework */; };
 		816A23457CED70354D38CF8C /* Pods_AgaveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01EC71EEBA426AC8936C3824 /* Pods_AgaveTests.framework */; };
 		99B87E2321727D7400DA9E51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B87E2221727D7400DA9E51 /* AppDelegate.swift */; };
@@ -35,6 +47,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5520BC6521732017004C00EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99B87E1721727D7300DA9E51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5520BC5B21732017004C00EC;
+			remoteInfo = AgaveIntentsUI;
+		};
+		5520BC6821732017004C00EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99B87E1721727D7300DA9E51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5520BC5221732017004C00EC;
+			remoteInfo = AgaveIntents;
+		};
 		99B87E3721727D7600DA9E51 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 99B87E1721727D7300DA9E51 /* Project object */;
@@ -51,10 +77,34 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5520BC4321730922004C00EC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5520BC6721732017004C00EC /* AgaveIntentsUI.appex in Embed App Extensions */,
+				5520BC6A21732017004C00EC /* AgaveIntents.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		01EC71EEBA426AC8936C3824 /* Pods_AgaveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgaveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		351EAC93BB74612CAFC0FD82 /* Pods-Agave.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Agave.release.xcconfig"; path = "Pods/Target Support Files/Pods-Agave/Pods-Agave.release.xcconfig"; sourceTree = "<group>"; };
 		488B2C213CB481B90A8CAC44 /* Pods_Agave.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Agave.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5520BC2E21730922004C00EC /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		5520BC5321732017004C00EC /* AgaveIntents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AgaveIntents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5520BC5521732017004C00EC /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		5520BC5721732017004C00EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5520BC5C21732017004C00EC /* AgaveIntentsUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AgaveIntentsUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5520BC5F21732017004C00EC /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		5520BC6221732017004C00EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		5520BC6421732017004C00EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5520BC712173203B004C00EC /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
 		56E62BFC61254A8FBE8DC805 /* Pods_AgaveUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgaveUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96CE0F5CFF170D6373E4F2D2 /* Pods-AgaveUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgaveUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AgaveUITests/Pods-AgaveUITests.release.xcconfig"; sourceTree = "<group>"; };
 		99B87E1F21727D7300DA9E51 /* Agave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Agave.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +142,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5520BC5021732017004C00EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5520BC5921732017004C00EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5520BC5D21732017004C00EC /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		99B87E1C21727D7300DA9E51 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -125,8 +190,29 @@
 				488B2C213CB481B90A8CAC44 /* Pods_Agave.framework */,
 				01EC71EEBA426AC8936C3824 /* Pods_AgaveTests.framework */,
 				56E62BFC61254A8FBE8DC805 /* Pods_AgaveUITests.framework */,
+				5520BC2E21730922004C00EC /* IntentsUI.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5520BC5421732017004C00EC /* AgaveIntents */ = {
+			isa = PBXGroup;
+			children = (
+				5520BC5521732017004C00EC /* IntentHandler.swift */,
+				5520BC5721732017004C00EC /* Info.plist */,
+				5520BC712173203B004C00EC /* Intents.intentdefinition */,
+			);
+			path = AgaveIntents;
+			sourceTree = "<group>";
+		};
+		5520BC5E21732017004C00EC /* AgaveIntentsUI */ = {
+			isa = PBXGroup;
+			children = (
+				5520BC5F21732017004C00EC /* IntentViewController.swift */,
+				5520BC6121732017004C00EC /* MainInterface.storyboard */,
+				5520BC6421732017004C00EC /* Info.plist */,
+			);
+			path = AgaveIntentsUI;
 			sourceTree = "<group>";
 		};
 		99B87E1621727D7300DA9E51 = {
@@ -135,6 +221,8 @@
 				99B87E2121727D7400DA9E51 /* Agave */,
 				99B87E3921727D7600DA9E51 /* AgaveTests */,
 				99B87E4421727D7600DA9E51 /* AgaveUITests */,
+				5520BC5421732017004C00EC /* AgaveIntents */,
+				5520BC5E21732017004C00EC /* AgaveIntentsUI */,
 				99B87E2021727D7300DA9E51 /* Products */,
 				99B87E552172806500DA9E51 /* Podfile */,
 				FBB57A940F0FE8122F4A6021 /* Pods */,
@@ -148,6 +236,8 @@
 				99B87E1F21727D7300DA9E51 /* Agave.app */,
 				99B87E3621727D7600DA9E51 /* AgaveTests.xctest */,
 				99B87E4121727D7600DA9E51 /* AgaveUITests.xctest */,
+				5520BC5321732017004C00EC /* AgaveIntents.appex */,
+				5520BC5C21732017004C00EC /* AgaveIntentsUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -245,6 +335,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5520BC5221732017004C00EC /* AgaveIntents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5520BC6E21732017004C00EC /* Build configuration list for PBXNativeTarget "AgaveIntents" */;
+			buildPhases = (
+				5520BC4F21732017004C00EC /* Sources */,
+				5520BC5021732017004C00EC /* Frameworks */,
+				5520BC5121732017004C00EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AgaveIntents;
+			productName = AgaveIntents;
+			productReference = 5520BC5321732017004C00EC /* AgaveIntents.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		5520BC5B21732017004C00EC /* AgaveIntentsUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5520BC6B21732017004C00EC /* Build configuration list for PBXNativeTarget "AgaveIntentsUI" */;
+			buildPhases = (
+				5520BC5821732017004C00EC /* Sources */,
+				5520BC5921732017004C00EC /* Frameworks */,
+				5520BC5A21732017004C00EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AgaveIntentsUI;
+			productName = AgaveIntentsUI;
+			productReference = 5520BC5C21732017004C00EC /* AgaveIntentsUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		99B87E1E21727D7300DA9E51 /* Agave */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99B87E4A21727D7600DA9E51 /* Build configuration list for PBXNativeTarget "Agave" */;
@@ -255,10 +379,13 @@
 				99B87E1D21727D7300DA9E51 /* Resources */,
 				11E0680A6A3EAAA485C26ABA /* [CP] Embed Pods Frameworks */,
 				9FC3E0009FCB8D5746DFAC41 /* [CP] Copy Pods Resources */,
+				5520BC4321730922004C00EC /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5520BC6621732017004C00EC /* PBXTargetDependency */,
+				5520BC6921732017004C00EC /* PBXTargetDependency */,
 			);
 			name = Agave;
 			productName = Agave;
@@ -313,6 +440,12 @@
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = JBYoung;
 				TargetAttributes = {
+					5520BC5221732017004C00EC = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					5520BC5B21732017004C00EC = {
+						CreatedOnToolsVersion = 10.0;
+					};
 					99B87E1E21727D7300DA9E51 = {
 						CreatedOnToolsVersion = 10.0;
 					};
@@ -342,11 +475,28 @@
 				99B87E1E21727D7300DA9E51 /* Agave */,
 				99B87E3521727D7600DA9E51 /* AgaveTests */,
 				99B87E4021727D7600DA9E51 /* AgaveUITests */,
+				5520BC5221732017004C00EC /* AgaveIntents */,
+				5520BC5B21732017004C00EC /* AgaveIntentsUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5520BC5121732017004C00EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5520BC5A21732017004C00EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5520BC6321732017004C00EC /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		99B87E1D21727D7300DA9E51 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -384,12 +534,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Agave/Pods-Agave-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
-				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
@@ -402,12 +547,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
@@ -498,6 +638,24 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5520BC4F21732017004C00EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5520BC752173203B004C00EC /* Intents.intentdefinition in Sources */,
+				5520BC5621732017004C00EC /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5520BC5821732017004C00EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5520BC7821732C0F004C00EC /* Intents.intentdefinition in Sources */,
+				5520BC6021732017004C00EC /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		99B87E1B21727D7300DA9E51 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -505,6 +663,7 @@
 				99B87E6421728FDB00DA9E51 /* MainNavigationController.swift in Sources */,
 				99B87E6D2172D09900DA9E51 /* SoundViewController.swift in Sources */,
 				99B87E58217285A300DA9E51 /* FindPodcastsViewController.swift in Sources */,
+				5520BC722173203B004C00EC /* Intents.intentdefinition in Sources */,
 				99B87E5E2172864400DA9E51 /* Episode.swift in Sources */,
 				99B87E2521727D7400DA9E51 /* ViewController.swift in Sources */,
 				99B87E2B21727D7400DA9E51 /* Agave.xcdatamodeld in Sources */,
@@ -515,6 +674,7 @@
 				99B87E762172FA0B00DA9E51 /* BookmarkViewController.swift in Sources */,
 				99B87E2321727D7400DA9E51 /* AppDelegate.swift in Sources */,
 				99B87E5D2172864400DA9E51 /* Podcast.swift in Sources */,
+				5520BC7721732154004C00EC /* IntentHandler.swift in Sources */,
 				99B87E5F2172864400DA9E51 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -523,6 +683,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5520BC7A217331A4004C00EC /* Intents.intentdefinition in Sources */,
 				99B87E3B21727D7600DA9E51 /* AgaveTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -531,6 +692,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5520BC79217331A3004C00EC /* Intents.intentdefinition in Sources */,
 				99B87E4621727D7600DA9E51 /* AgaveUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -538,6 +700,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5520BC6621732017004C00EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5520BC5B21732017004C00EC /* AgaveIntentsUI */;
+			targetProxy = 5520BC6521732017004C00EC /* PBXContainerItemProxy */;
+		};
+		5520BC6921732017004C00EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5520BC5221732017004C00EC /* AgaveIntents */;
+			targetProxy = 5520BC6821732017004C00EC /* PBXContainerItemProxy */;
+		};
 		99B87E3821727D7600DA9E51 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 99B87E1E21727D7300DA9E51 /* Agave */;
@@ -551,6 +723,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		5520BC6121732017004C00EC /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5520BC6221732017004C00EC /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		99B87E2621727D7400DA9E51 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -570,6 +750,86 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5520BC6C21732017004C00EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JVTS2SVU4G;
+				INFOPLIST_FILE = AgaveIntentsUI/Info.plist;
+				INTENTS_CODEGEN_LANGUAGE = Swift;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JBYoung.Agave.AgaveIntentsUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5520BC6D21732017004C00EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JVTS2SVU4G;
+				INFOPLIST_FILE = AgaveIntentsUI/Info.plist;
+				INTENTS_CODEGEN_LANGUAGE = Swift;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JBYoung.Agave.AgaveIntentsUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5520BC6F21732017004C00EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JVTS2SVU4G;
+				INFOPLIST_FILE = AgaveIntents/Info.plist;
+				INTENTS_CODEGEN_LANGUAGE = Swift;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JBYoung.Agave.AgaveIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5520BC7021732017004C00EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JVTS2SVU4G;
+				INFOPLIST_FILE = AgaveIntents/Info.plist;
+				INTENTS_CODEGEN_LANGUAGE = Swift;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JBYoung.Agave.AgaveIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		99B87E4821727D7600DA9E51 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -690,10 +950,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ABAEC6F346A37D0A8DA633DC /* Pods-Agave.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JVTS2SVU4G;
 				INFOPLIST_FILE = Agave/Info.plist;
+				INTENTS_CODEGEN_LANGUAGE = Swift;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -709,10 +971,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 351EAC93BB74612CAFC0FD82 /* Pods-Agave.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JVTS2SVU4G;
 				INFOPLIST_FILE = Agave/Info.plist;
+				INTENTS_CODEGEN_LANGUAGE = Swift;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -813,6 +1077,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5520BC6B21732017004C00EC /* Build configuration list for PBXNativeTarget "AgaveIntentsUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5520BC6C21732017004C00EC /* Debug */,
+				5520BC6D21732017004C00EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5520BC6E21732017004C00EC /* Build configuration list for PBXNativeTarget "AgaveIntents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5520BC6F21732017004C00EC /* Debug */,
+				5520BC7021732017004C00EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		99B87E1A21727D7300DA9E51 /* Build configuration list for PBXProject "Agave" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
