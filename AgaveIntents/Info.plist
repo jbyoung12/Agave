@@ -31,7 +31,6 @@
 			<key>IntentsSupported</key>
 			<array>
 				<string>CreateBookmarkIntent</string>
-				<string>INCreateBookmarkIntent</string>
 				<string>INPlayMediaIntent</string>
 				<string>INVocabulary</string>
 			</array>

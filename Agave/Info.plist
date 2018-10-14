@@ -23,7 +23,6 @@
 	<key>NSUserActivityTypes</key>
 	<array>
 		<string>CreateBookmarkIntent</string>
-		<string>INCreateBookmarkIntent</string>
 	</array>
 	<key>UIBackgroundModes</key>
 	<array>
