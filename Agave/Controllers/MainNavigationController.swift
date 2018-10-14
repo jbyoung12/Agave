@@ -17,13 +17,7 @@ class MainNavigationController: UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-//        if let accessToken = AccessToken.current {
-//            // User is logged in, use 'accessToken' here.
-//            print("user logged in")
-//        } else{
-//            showLoginController()
-//        }
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,18 +34,9 @@ class MainNavigationController: UINavigationController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.isNavigationBarHidden = true
-//        authListener = Auth.auth().addStateDidChangeListener() { auth, user in
-//            if user == nil {
-//                self.showLoginController()
-//            }
-//            else{
-//                let mainTabBarViewController = MainTabBarViewController()
-//                self.pushViewController(mainTabBarViewController, animated: false)
-//                if (self.identifier != nil){
-//                    mainTabBarViewController.setUpFromNotification(identifier: self.identifier!)
-//                }
-//            }
-//        }
+        let mainTabBarViewController = MainTabBarViewController()
+        self.pushViewController(mainTabBarViewController, animated: false)
+
     }
     
     override func viewDidDisappear(_ animated: Bool) {

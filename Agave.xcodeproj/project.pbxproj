@@ -26,6 +26,8 @@
 		99B87E6421728FDB00DA9E51 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B87E6221728FDB00DA9E51 /* MainNavigationController.swift */; };
 		99B87E6521728FDB00DA9E51 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B87E6321728FDB00DA9E51 /* MainTabBarViewController.swift */; };
 		99B87E672172A61400DA9E51 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99B87E662172A61400DA9E51 /* GoogleService-Info.plist */; };
+		99B87E6B2172CAB400DA9E51 /* PodcastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B87E6A2172CAB400DA9E51 /* PodcastTableViewCell.swift */; };
+		99B87E6D2172D09900DA9E51 /* SoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B87E6C2172D09900DA9E51 /* SoundViewController.swift */; };
 		CF9E5AF137A9FE269449A560 /* Pods_Agave.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488B2C213CB481B90A8CAC44 /* Pods_Agave.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +77,8 @@
 		99B87E6221728FDB00DA9E51 /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		99B87E6321728FDB00DA9E51 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		99B87E662172A61400DA9E51 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		99B87E6A2172CAB400DA9E51 /* PodcastTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastTableViewCell.swift; sourceTree = "<group>"; };
+		99B87E6C2172D09900DA9E51 /* SoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundViewController.swift; sourceTree = "<group>"; };
 		A5FC45B5A184D95B18BFA632 /* Pods-AgaveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgaveTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AgaveTests/Pods-AgaveTests.release.xcconfig"; sourceTree = "<group>"; };
 		ABAEC6F346A37D0A8DA633DC /* Pods-Agave.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Agave.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Agave/Pods-Agave.debug.xcconfig"; sourceTree = "<group>"; };
 		E602FD0F3DE8884F88EA2FB7 /* Pods-AgaveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgaveUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AgaveUITests/Pods-AgaveUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -150,6 +154,7 @@
 				99B87E5421727DBA00DA9E51 /* Auth */,
 				99B87E5321727DB000DA9E51 /* Controllers */,
 				99B87E2221727D7400DA9E51 /* AppDelegate.swift */,
+				99B87E6A2172CAB400DA9E51 /* PodcastTableViewCell.swift */,
 				99B87E2421727D7400DA9E51 /* ViewController.swift */,
 				99B87E2621727D7400DA9E51 /* Main.storyboard */,
 				99B87E2C21727D7600DA9E51 /* Assets.xcassets */,
@@ -185,6 +190,7 @@
 				99B87E57217285A300DA9E51 /* FindPodcastsViewController.swift */,
 				99B87E6221728FDB00DA9E51 /* MainNavigationController.swift */,
 				99B87E6321728FDB00DA9E51 /* MainTabBarViewController.swift */,
+				99B87E6C2172D09900DA9E51 /* SoundViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -479,10 +485,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				99B87E6421728FDB00DA9E51 /* MainNavigationController.swift in Sources */,
+				99B87E6D2172D09900DA9E51 /* SoundViewController.swift in Sources */,
 				99B87E58217285A300DA9E51 /* FindPodcastsViewController.swift in Sources */,
 				99B87E5E2172864400DA9E51 /* Episode.swift in Sources */,
 				99B87E2521727D7400DA9E51 /* ViewController.swift in Sources */,
 				99B87E2B21727D7400DA9E51 /* Agave.xcdatamodeld in Sources */,
+				99B87E6B2172CAB400DA9E51 /* PodcastTableViewCell.swift in Sources */,
 				99B87E6521728FDB00DA9E51 /* MainTabBarViewController.swift in Sources */,
 				99B87E6121728A4100DA9E51 /* LoginViewController.swift in Sources */,
 				99B87E2321727D7400DA9E51 /* AppDelegate.swift in Sources */,

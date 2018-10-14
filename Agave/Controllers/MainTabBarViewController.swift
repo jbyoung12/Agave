@@ -16,24 +16,18 @@ class MainTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let myPushLearnsVC = mainStoryboard.instantiateViewController(withIdentifier: "MainNavController")
-        let plazaVC = mainStoryboard.instantiateViewController(withIdentifier: "PlazaNavController")
-        let accountVC = mainStoryboard.instantiateViewController(withIdentifier: "AccountNavigationViewController")
+        let podcastsVC = mainStoryboard.instantiateViewController(withIdentifier: "FindPodcastsViewController")
         
         //set titles
-        myPushLearnsVC.tabBarItem.title = "My PushLearns"
-        plazaVC.tabBarItem.title = "Plaza"
-        accountVC.tabBarItem.title = "Account"
+        podcastsVC.tabBarItem.title = "Podcasts"
         
         //set images
-        myPushLearnsVC.tabBarItem.image = UIImage(named: "PushLearnImage")
-        plazaVC.tabBarItem.image = UIImage(named: "shopping_cart")
-        accountVC.tabBarItem.image = UIImage(named: "contact_card")
+        podcastsVC.tabBarItem.image = UIImage(named: "TableImage")
         
-        self.viewControllers = [myPushLearnsVC, plazaVC, accountVC]
+        self.viewControllers = [podcastsVC]
         
         self.tabBar.isTranslucent = false
-        // Do any additional setup after loading the view.
+
     }
 
     override func didReceiveMemoryWarning() {
