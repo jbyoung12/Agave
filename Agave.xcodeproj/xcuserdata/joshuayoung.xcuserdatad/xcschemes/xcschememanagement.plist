@@ -7,7 +7,17 @@
 		<key>Agave.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>21</integer>
+		</dict>
+		<key>AgaveIntents.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>20</integer>
+		</dict>
+		<key>AgaveIntentsUI.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>22</integer>
 		</dict>
 	</dict>
 </dict>
