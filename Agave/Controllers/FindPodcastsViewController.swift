@@ -46,7 +46,9 @@ class FindPodcastsViewController: UIViewController {
         tableView.dataSource = self
 
     }
-    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     func showDetailsForPodcast(){
         performSegue(withIdentifier: "showDetails", sender: AnyObject.self)
     }

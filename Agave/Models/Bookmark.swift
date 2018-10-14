@@ -13,7 +13,7 @@ struct Bookmark {
     
     let documentId: String?
     let time: TimeInterval
-    let description: String
+    var description: String
     let timeString: String!
     
     init(time: TimeInterval, description: String, documentId: String) {

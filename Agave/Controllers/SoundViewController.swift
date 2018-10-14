@@ -9,6 +9,7 @@ import UIKit
 import Foundation
 import AVFoundation
 import Firebase
+import MediaPlayer
 
 class SoundViewController: UIViewController {
     
@@ -19,45 +20,41 @@ class SoundViewController: UIViewController {
     @IBOutlet weak var descriptioner: UITextView!
     @IBOutlet weak var bookmarksTable: UITableView!
     
+    override func viewWillAppear(_ animated: Bool) {
+        db = Firestore.firestore()
+        self.getBookmarks()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         name.text = self.podcast?.name
         descriptioner.text = self.podcast?.description
-        self.prepareSongAndSession()
-        db = Firestore.firestore()
-        self.getBookmarks()
         bookmarksTable.delegate = self
         bookmarksTable.dataSource = self
+        setCustomBack()
     }
-    
-    
-    var audioPlayer: AVAudioPlayer?
-    
-    // call in viewDidLoad()
-    func prepareSongAndSession() {
-        do {
-            if let path = Bundle.main.path(forResource: (podcast?.documentId), ofType:"mp3") {
-                audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: path))
-            } else {
-                print("No file with specified name exists")
-            }
-        } catch let error {
-            print("Can't play the audio file failed with an error \(error.localizedDescription)")
-        }
-        
+
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
-    
+    fileprivate func setCustomBack(){
+        navigationItem.backBarButtonItem?.tintColor = UIColor.white
+        navigationItem.rightBarButtonItem?.tintColor = UIColor.white
+    }
     
     @IBAction func play(_ sender: Any) {
-        audioPlayer?.play()
+        if (Player.app.podcastId != podcast?.documentId){
+            Player.app.prepareSongAndSession(podcast: podcast!)
+        }
+        Player.app.play()
     }
     
     @IBAction func pause(_ sender: Any) {
-        audioPlayer?.pause()
+        Player.app.pause()
     }
     
     @IBAction func addBookmark(_ sender: Any) {
-        let time = audioPlayer?.currentTime
+        let time = Player.app.audioPlayer?.currentTime
         // find user ID, Podcast ID, add to bookmarks collection
         // add bookmark of 72 seconds to edwards bookmarks for this american life
         let podcastUsers = db?.collection("podcasts").document((podcast?.documentId)!).collection("users")
@@ -73,6 +70,9 @@ class SoundViewController: UIViewController {
             } else {
                 print("Document added with ID: \(ref!.documentID)")
                 self.bookmarks.append(Bookmark(time: time!, description: "", documentId: ref!.documentID))
+                self.bookmarks.sort(by: { (Bookmark1, Bookmark2) -> Bool in
+                    return Bookmark1.time < Bookmark2.time
+                })
                 self.bookmarksTable.reloadData()
             }
         }
@@ -81,6 +81,7 @@ class SoundViewController: UIViewController {
     
     fileprivate func getBookmarks(){
         // prints edwards bookmarks
+        bookmarks = []
         let podcastUsers = db?.collection("podcasts").document((podcast?.documentId)!).collection("users")
         let edwardBookmarks = podcastUsers?.document("VJUKEVptSyfxFrvnCXKg").collection("bookmarks")
         
@@ -95,6 +96,9 @@ class SoundViewController: UIViewController {
                 }
             }
         }
+            self.bookmarks.sort(by: { (Bookmark1, Bookmark2) -> Bool in
+                return Bookmark1.time < Bookmark2.time
+            })
             self.bookmarksTable.reloadData()
     }
     }
@@ -107,15 +111,11 @@ class SoundViewController: UIViewController {
         if let destination = segue.destination as? BookmarkViewController{
             destination.podcast = podcast
             destination.bookmark = bookmarks[(bookmarksTable.indexPathForSelectedRow?.row)!]
+            destination.bookmarksTable = bookmarksTable
         }
     }
     
-//    @IBAction func jumpToBookmark(_ sender: Any, TimeInterval bookmark) {
-//        songPlayer.play(bookmark)
-//    }
-    
 }
-
 extension SoundViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -136,7 +136,7 @@ extension SoundViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        self.showDetailsForPodcast()
+        self.showDetailsForBookmark()
     }
     
     

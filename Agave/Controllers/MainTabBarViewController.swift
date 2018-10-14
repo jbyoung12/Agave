@@ -12,7 +12,9 @@ import Firebase
 class MainTabBarViewController: UITabBarController {
     
     var mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         

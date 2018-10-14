@@ -15,10 +15,11 @@
 		5520BC6A21732017004C00EC /* AgaveIntents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5520BC5321732017004C00EC /* AgaveIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5520BC722173203B004C00EC /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5520BC712173203B004C00EC /* Intents.intentdefinition */; };
 		5520BC752173203B004C00EC /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5520BC712173203B004C00EC /* Intents.intentdefinition */; };
-		5520BC7721732154004C00EC /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5520BC5521732017004C00EC /* IntentHandler.swift */; };
 		5520BC7821732C0F004C00EC /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5520BC712173203B004C00EC /* Intents.intentdefinition */; };
 		5520BC79217331A3004C00EC /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5520BC712173203B004C00EC /* Intents.intentdefinition */; };
 		5520BC7A217331A4004C00EC /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5520BC712173203B004C00EC /* Intents.intentdefinition */; };
+		5520BC7B21733C24004C00EC /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B87E6321728FDB00DA9E51 /* MainTabBarViewController.swift */; };
+		5520BC7C21733C34004C00EC /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5520BC5521732017004C00EC /* IntentHandler.swift */; };
 		6D2D5D2085CD371E3F622467 /* Pods_AgaveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56E62BFC61254A8FBE8DC805 /* Pods_AgaveUITests.framework */; };
 		816A23457CED70354D38CF8C /* Pods_AgaveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01EC71EEBA426AC8936C3824 /* Pods_AgaveTests.framework */; };
 		99B87E2321727D7400DA9E51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B87E2221727D7400DA9E51 /* AppDelegate.swift */; };
@@ -43,6 +44,8 @@
 		99B87E722172E79A00DA9E51 /* 43cAtBt2eMwi9ToRGGTD.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 99B87E712172E79A00DA9E51 /* 43cAtBt2eMwi9ToRGGTD.mp3 */; };
 		99B87E742172F2B400DA9E51 /* Bookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B87E732172F2B300DA9E51 /* Bookmark.swift */; };
 		99B87E762172FA0B00DA9E51 /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B87E752172FA0B00DA9E51 /* BookmarkViewController.swift */; };
+		99B87E7821731F9600DA9E51 /* 489.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 99B87E7721731F9600DA9E51 /* 489.mp3 */; };
+		99B87E7C2173233800DA9E51 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B87E7B2173233800DA9E51 /* Player.swift */; };
 		CF9E5AF137A9FE269449A560 /* Pods_Agave.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488B2C213CB481B90A8CAC44 /* Pods_Agave.framework */; };
 /* End PBXBuildFile section */
 
@@ -135,6 +138,8 @@
 		99B87E712172E79A00DA9E51 /* 43cAtBt2eMwi9ToRGGTD.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 43cAtBt2eMwi9ToRGGTD.mp3; sourceTree = "<group>"; };
 		99B87E732172F2B300DA9E51 /* Bookmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookmark.swift; sourceTree = "<group>"; };
 		99B87E752172FA0B00DA9E51 /* BookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
+		99B87E7721731F9600DA9E51 /* 489.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 489.mp3; sourceTree = "<group>"; };
+		99B87E7B2173233800DA9E51 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		A5FC45B5A184D95B18BFA632 /* Pods-AgaveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgaveTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AgaveTests/Pods-AgaveTests.release.xcconfig"; sourceTree = "<group>"; };
 		ABAEC6F346A37D0A8DA633DC /* Pods-Agave.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Agave.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Agave/Pods-Agave.debug.xcconfig"; sourceTree = "<group>"; };
 		E602FD0F3DE8884F88EA2FB7 /* Pods-AgaveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgaveUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AgaveUITests/Pods-AgaveUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -258,6 +263,7 @@
 				99B87E2E21727D7600DA9E51 /* LaunchScreen.storyboard */,
 				99B87E3121727D7600DA9E51 /* Info.plist */,
 				99B87E2921727D7400DA9E51 /* Agave.xcdatamodeld */,
+				99B87E7B2173233800DA9E51 /* Player.swift */,
 			);
 			path = Agave;
 			sourceTree = "<group>";
@@ -315,6 +321,7 @@
 			isa = PBXGroup;
 			children = (
 				99B87E712172E79A00DA9E51 /* 43cAtBt2eMwi9ToRGGTD.mp3 */,
+				99B87E7721731F9600DA9E51 /* 489.mp3 */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -448,6 +455,11 @@
 					};
 					99B87E1E21727D7300DA9E51 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					99B87E3521727D7600DA9E51 = {
 						CreatedOnToolsVersion = 10.0;
@@ -502,6 +514,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99B87E3021727D7600DA9E51 /* LaunchScreen.storyboard in Resources */,
+				99B87E7821731F9600DA9E51 /* 489.mp3 in Resources */,
 				99B87E722172E79A00DA9E51 /* 43cAtBt2eMwi9ToRGGTD.mp3 in Resources */,
 				99B87E2D21727D7600DA9E51 /* Assets.xcassets in Resources */,
 				99B87E672172A61400DA9E51 /* GoogleService-Info.plist in Resources */,
@@ -642,6 +655,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5520BC7B21733C24004C00EC /* MainTabBarViewController.swift in Sources */,
 				5520BC752173203B004C00EC /* Intents.intentdefinition in Sources */,
 				5520BC5621732017004C00EC /* IntentHandler.swift in Sources */,
 			);
@@ -674,7 +688,8 @@
 				99B87E762172FA0B00DA9E51 /* BookmarkViewController.swift in Sources */,
 				99B87E2321727D7400DA9E51 /* AppDelegate.swift in Sources */,
 				99B87E5D2172864400DA9E51 /* Podcast.swift in Sources */,
-				5520BC7721732154004C00EC /* IntentHandler.swift in Sources */,
+				99B87E7C2173233800DA9E51 /* Player.swift in Sources */,
+				5520BC7C21733C34004C00EC /* IntentHandler.swift in Sources */,
 				99B87E5F2172864400DA9E51 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
