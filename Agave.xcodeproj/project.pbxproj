@@ -28,6 +28,9 @@
 		99B87E672172A61400DA9E51 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99B87E662172A61400DA9E51 /* GoogleService-Info.plist */; };
 		99B87E6B2172CAB400DA9E51 /* PodcastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B87E6A2172CAB400DA9E51 /* PodcastTableViewCell.swift */; };
 		99B87E6D2172D09900DA9E51 /* SoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B87E6C2172D09900DA9E51 /* SoundViewController.swift */; };
+		99B87E722172E79A00DA9E51 /* 43cAtBt2eMwi9ToRGGTD.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 99B87E712172E79A00DA9E51 /* 43cAtBt2eMwi9ToRGGTD.mp3 */; };
+		99B87E742172F2B400DA9E51 /* Bookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B87E732172F2B300DA9E51 /* Bookmark.swift */; };
+		99B87E762172FA0B00DA9E51 /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B87E752172FA0B00DA9E51 /* BookmarkViewController.swift */; };
 		CF9E5AF137A9FE269449A560 /* Pods_Agave.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488B2C213CB481B90A8CAC44 /* Pods_Agave.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +82,9 @@
 		99B87E662172A61400DA9E51 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		99B87E6A2172CAB400DA9E51 /* PodcastTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastTableViewCell.swift; sourceTree = "<group>"; };
 		99B87E6C2172D09900DA9E51 /* SoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundViewController.swift; sourceTree = "<group>"; };
+		99B87E712172E79A00DA9E51 /* 43cAtBt2eMwi9ToRGGTD.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 43cAtBt2eMwi9ToRGGTD.mp3; sourceTree = "<group>"; };
+		99B87E732172F2B300DA9E51 /* Bookmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookmark.swift; sourceTree = "<group>"; };
+		99B87E752172FA0B00DA9E51 /* BookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
 		A5FC45B5A184D95B18BFA632 /* Pods-AgaveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgaveTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AgaveTests/Pods-AgaveTests.release.xcconfig"; sourceTree = "<group>"; };
 		ABAEC6F346A37D0A8DA633DC /* Pods-Agave.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Agave.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Agave/Pods-Agave.debug.xcconfig"; sourceTree = "<group>"; };
 		E602FD0F3DE8884F88EA2FB7 /* Pods-AgaveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgaveUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AgaveUITests/Pods-AgaveUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -149,6 +155,7 @@
 		99B87E2121727D7400DA9E51 /* Agave */ = {
 			isa = PBXGroup;
 			children = (
+				99B87E702172E73900DA9E51 /* Resources */,
 				99B87E662172A61400DA9E51 /* GoogleService-Info.plist */,
 				99B87E59217285DF00DA9E51 /* Models */,
 				99B87E5421727DBA00DA9E51 /* Auth */,
@@ -191,6 +198,7 @@
 				99B87E6221728FDB00DA9E51 /* MainNavigationController.swift */,
 				99B87E6321728FDB00DA9E51 /* MainTabBarViewController.swift */,
 				99B87E6C2172D09900DA9E51 /* SoundViewController.swift */,
+				99B87E752172FA0B00DA9E51 /* BookmarkViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -208,8 +216,17 @@
 				99B87E5B2172864400DA9E51 /* Episode.swift */,
 				99B87E5A2172864400DA9E51 /* Podcast.swift */,
 				99B87E5C2172864400DA9E51 /* User.swift */,
+				99B87E732172F2B300DA9E51 /* Bookmark.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		99B87E702172E73900DA9E51 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				99B87E712172E79A00DA9E51 /* 43cAtBt2eMwi9ToRGGTD.mp3 */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		FBB57A940F0FE8122F4A6021 /* Pods */ = {
@@ -335,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99B87E3021727D7600DA9E51 /* LaunchScreen.storyboard in Resources */,
+				99B87E722172E79A00DA9E51 /* 43cAtBt2eMwi9ToRGGTD.mp3 in Resources */,
 				99B87E2D21727D7600DA9E51 /* Assets.xcassets in Resources */,
 				99B87E672172A61400DA9E51 /* GoogleService-Info.plist in Resources */,
 				99B87E562172806500DA9E51 /* Podfile in Resources */,
@@ -493,6 +511,8 @@
 				99B87E6B2172CAB400DA9E51 /* PodcastTableViewCell.swift in Sources */,
 				99B87E6521728FDB00DA9E51 /* MainTabBarViewController.swift in Sources */,
 				99B87E6121728A4100DA9E51 /* LoginViewController.swift in Sources */,
+				99B87E742172F2B400DA9E51 /* Bookmark.swift in Sources */,
+				99B87E762172FA0B00DA9E51 /* BookmarkViewController.swift in Sources */,
 				99B87E2321727D7400DA9E51 /* AppDelegate.swift in Sources */,
 				99B87E5D2172864400DA9E51 /* Podcast.swift in Sources */,
 				99B87E5F2172864400DA9E51 /* User.swift in Sources */,

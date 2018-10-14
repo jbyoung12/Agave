@@ -15,17 +15,6 @@ struct Podcast {
     let description: String
     var episodes = [Episode]()
     
-//    init?(dict: Dictionary) {
-//        guard
-//            let title = dict["title"] as? String,
-//            let description = dict["description"] as? String
-//            else {
-//                return nil
-//        }
-//        self.title = title
-//        self.description = description
-//    }
-//
     init(name: String, description: String, documentId: String) {
             self.name = name
             self.description = description
@@ -45,25 +34,5 @@ struct Podcast {
             documentId: document.documentID
         )
     }
-//
-//    init?(snapshot: DocumentSnapshot) {
-//        guard
-//            let value = snapshot. as? [String: AnyObject],
-//            let title = value["title"] as? String,
-//            let description = value["description"] as? String
-//            else {
-//                return nil
-//        }
-//        self.ref = snapshot.ref
-//        self.title = title
-//        self.description = description
-//    }
-//
-//    
-//    func toDict() -> Any {
-//        return [
-//            "title": title,
-//            "description": description
-//        ]
-//    }
+
 }
