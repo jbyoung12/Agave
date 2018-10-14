@@ -93,16 +93,6 @@
       "idiom" : "ios-marketing",
       "filename" : "dark-bg@1024.png",
       "scale" : "1x"
-    },
-    {
-      "idiom" : "universal",
-      "filename" : "dark-bg@3x_60.png",
-      "scale" : "3x"
-    },
-    {
-      "idiom" : "universal",
-      "filename" : "dark-bg@3x.png",
-      "scale" : "3x"
     }
   ],
   "info" : {

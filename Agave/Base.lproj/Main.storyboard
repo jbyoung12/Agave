@@ -179,14 +179,18 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sut-u4-d3m">
                                                 <rect key="frame" x="0.0" y="0.0" width="173.5" height="30"/>
-                                                <state key="normal" title="Play"/>
+                                                <state key="normal" title="Play">
+                                                    <color key="titleColor" red="0.17254901959999999" green="0.56862745100000001" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="play:" destination="noN-Ra-bfO" eventType="touchUpInside" id="OAe-zG-4jB"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9s6-Hg-Yi4" userLabel="Pause Button">
                                                 <rect key="frame" x="181.5" y="0.0" width="173.5" height="30"/>
-                                                <state key="normal" title="Pause"/>
+                                                <state key="normal" title="Pause">
+                                                    <color key="titleColor" red="0.17254901959999999" green="0.56862745100000001" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="pause:" destination="noN-Ra-bfO" eventType="touchUpInside" id="HjI-7h-BT5"/>
                                                 </connections>
@@ -198,7 +202,9 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSW-0r-2lz" userLabel="Bookmark">
                                                 <rect key="frame" x="0.0" y="0.0" width="355" height="30"/>
-                                                <state key="normal" title="Bookmark"/>
+                                                <state key="normal" title="Bookmark">
+                                                    <color key="titleColor" red="0.17254901959999999" green="0.56862745100000001" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="addBookmark:" destination="noN-Ra-bfO" eventType="touchUpInside" id="oeW-IO-BQo"/>
                                                 </connections>
@@ -229,7 +235,7 @@
                         <outlet property="bookmarksTable" destination="UHp-r6-n56" id="hyF-1X-Hm6"/>
                         <outlet property="descriptioner" destination="odB-0X-p6I" id="ZpC-aQ-Ivp"/>
                         <outlet property="name" destination="nbt-GX-cM4" id="go4-WI-fMg"/>
-                        <segue destination="BOO-3v-CAI" kind="show" identifier="bookmarkSegue" id="sam-RE-x5p"/>
+                        <segue destination="BOO-3v-CAI" kind="show" identifier="showBookmark" id="sam-RE-x5p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gEn-7e-bAq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -309,10 +315,16 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cU-cw-iNW">
                                                 <rect key="frame" x="0.0" y="0.0" width="173.5" height="30"/>
                                                 <state key="normal" title="Play"/>
+                                                <connections>
+                                                    <action selector="play:" destination="BOO-3v-CAI" eventType="touchUpInside" id="0SX-24-JCc"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cxd-dh-wlr" userLabel="Pause Button">
                                                 <rect key="frame" x="181.5" y="0.0" width="173.5" height="30"/>
                                                 <state key="normal" title="Pause"/>
+                                                <connections>
+                                                    <action selector="pause:" destination="BOO-3v-CAI" eventType="touchUpInside" id="g90-8d-t6j"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -333,6 +345,7 @@
                         <viewLayoutGuide key="safeArea" id="IJy-D2-U6c"/>
                     </view>
                     <connections>
+                        <outlet property="descriptioner" destination="I4A-MI-Ru6" id="ayl-27-Dlz"/>
                         <outlet property="time" destination="vf8-Pu-jOn" id="hQB-bK-1zm"/>
                     </connections>
                 </viewController>
@@ -341,4 +354,5 @@
             <point key="canvasLocation" x="5673" y="-136"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

@@ -11,73 +11,88 @@ import UIKit
 import AVFoundation
 import Firebase
 
-class BookmarkViewController: UIViewController {
+class BookmarkViewController: UIViewController, UITextViewDelegate {
     
-    var podcast: Podcast?
+    var podcast: Podcast!
     var bookmark: Bookmark!
+    weak var bookmarksTable: UITableView!
     @IBOutlet weak var time: UITextView!
     @IBOutlet weak var descriptioner: UITextView!
-    @IBOutlet weak var bookmarksTable: UITableView!
+    var descriptionBlank = true;
 
     override func viewDidLoad() {
         super.viewDidLoad()
         time.text = self.bookmark?.timeString
-        descriptioner.text = self.bookmark?.description
-        self.prepareSongAndSession()
-    }
-    
-    
-    var audioPlayer: AVAudioPlayer?
-    
-    // call in viewDidLoad()
-    func prepareSongAndSession() {
-        do {
-            if let path = Bundle.main.path(forResource: (podcast?.documentId), ofType:"mp3") {
-                audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: path))
-            } else {
-                print("No file with specified name exists")
-            }
-        } catch let error {
-            print("Can't play the audio file failed with an error \(error.localizedDescription)")
+        descriptioner.delegate = self
+        if self.bookmark?.description != "" {
+            descriptionBlank = false;
+            descriptioner.text = self.bookmark?.description
         }
+        setCustomBack()
         
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
+        
+        //listen for keyboard events
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+    }
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    deinit {
+        //stop listening for keyboard events
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+    }
+    fileprivate func setCustomBack(){
+        navigationItem.backBarButtonItem?.tintColor = UIColor.white
+        navigationItem.rightBarButtonItem?.tintColor = UIColor.white
     }
     
+    @objc func keyboardWillShow(_ notification: Notification){
+        if (descriptionBlank){
+            self.descriptioner.text = ""
+        }
+    }
     
+    // jumps to bookmark
     @IBAction func play(_ sender: Any) {
-        audioPlayer?.play()
+        if (Player.app.podcastId != podcast?.documentId){
+            Player.app.prepareSongAndSession(podcast: podcast!)
+        }
+        Player.app.audioPlayer?.currentTime = bookmark.time
+        Player.app.play()
     }
     
     @IBAction func pause(_ sender: Any) {
-        audioPlayer?.pause()
+        Player.app.pause()
     }
     
-    @IBAction func updateDescription(_ sender: Any) {
+    fileprivate func updateDescription() {
         var db: Firestore?
         db = Firestore.firestore()
         let podcastUsers = db?.collection("podcasts").document((podcast?.documentId)!).collection("users")
         let thisBookmark = podcastUsers?.document("VJUKEVptSyfxFrvnCXKg").collection("bookmarks").document(bookmark.documentId!)
-        var ref: DocumentReference? = nil
         //need to do update
-//        ref = edwardBookmarks?.addDocument(data: [
-//            "time": time!,
-//            "description": ""
-//        ]) {
-//            err in
-//            if let err = err {
-//                print("Error adding document: \(err)")
-//            } else {
-//                print("Document added with ID: \(ref!.documentID)")
-//                self.bookmarks.append(Bookmark(time: time!, description: "", documentId: ref!.documentID))
-//                self.bookmarksTable.reloadData()
-//            }
-//        }
+        thisBookmark?.updateData([
+            "description": self.descriptioner.text
+        ]) {
+            err in
+            if let err = err {
+                print("Error adding document: \(err)")
+            } else {
+                print("Document updated")
+                self.bookmark.description = self.descriptioner.text
+                self.bookmarksTable.reloadData()
+            }
+        }
         
     }
 
     
-    //    @IBAction func jumpToBookmark(_ sender: Any, TimeInterval bookmark) {
-    //        songPlayer.play(bookmark)
-    //    }
+    func textViewDidEndEditing(_ textView: UITextView){
+        if (self.descriptioner.text != ""){
+            descriptionBlank = false;
+            self.updateDescription()
+        }
+    }
     
 }
